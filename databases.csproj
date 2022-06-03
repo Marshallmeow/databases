@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02D50709-23B2-4CD2-B7B9-AE9AF76A77AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>database</RootNamespace>
+    <AssemblyName>database</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_form_otdel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_form_otdel.Designer.cs">
+      <DependentUpon>add_form_otdel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_form_sklad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_form_sklad.Designer.cs">
+      <DependentUpon>add_form_sklad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_form_supp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_form_supp.Designer.cs">
+      <DependentUpon>add_form_supp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkUser.cs" />
+    <Compile Include="update_cost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_cost.Designer.cs">
+      <DependentUpon>update_cost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Form.Designer.cs">
+      <DependentUpon>Add_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_form_worker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_form_worker.Designer.cs">
+      <DependentUpon>add_form_worker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_form_product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_form_product.Designer.cs">
+      <DependentUpon>add_form_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="log_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log_in.Designer.cs">
+      <DependentUpon>log_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="update_otdel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_otdel.Designer.cs">
+      <DependentUpon>update_otdel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_product.Designer.cs">
+      <DependentUpon>update_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_sklad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_sklad.Designer.cs">
+      <DependentUpon>update_sklad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_supp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_supp.Designer.cs">
+      <DependentUpon>update_supp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_worker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_worker.Designer.cs">
+      <DependentUpon>update_worker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yakovlevDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>yakovlevDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_Form.resx">
+      <DependentUpon>Add_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_form_otdel.resx">
+      <DependentUpon>add_form_otdel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_form_product.resx">
+      <DependentUpon>add_form_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_form_sklad.resx">
+      <DependentUpon>add_form_sklad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_form_supp.resx">
+      <DependentUpon>add_form_supp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_form_worker.resx">
+      <DependentUpon>add_form_worker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_cost.resx">
+      <DependentUpon>update_cost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log_in.resx">
+      <DependentUpon>log_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="update_otdel.resx">
+      <DependentUpon>update_otdel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_product.resx">
+      <DependentUpon>update_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_sklad.resx">
+      <DependentUpon>update_sklad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_supp.resx">
+      <DependentUpon>update_supp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_worker.resx">
+      <DependentUpon>update_worker.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="yakovlevDataSet.xsc">
+      <DependentUpon>yakovlevDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="yakovlevDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>yakovlevDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="yakovlevDataSet.xss">
+      <DependentUpon>yakovlevDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addUser.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openeye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeeyes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enteracc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trashbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addacc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finder1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-list1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enteracc1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
+</Project>
